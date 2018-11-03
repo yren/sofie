@@ -2,41 +2,27 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>me.lokvin.kiwi.sofe</groupId>
-  <artifactId>sofie-client</artifactId>
-  <packaging>jar</packaging>
+  <artifactId>sofie</artifactId>
+  <packaging>pom</packaging>
   <version>0.1.0</version>
-  <name>sofie-client</name>
+  <name>sofie framework</name>
   <url>https://github.com/yren/sofie</url>
-  <description>sofie framework client</description>
+  <description>sofie framework</description>
+
+  <modules>
+    <module>sofie-client</module>
+  </modules>
 
   <properties>
-    <java.version>1.8</java.version>
-    <junit.version>4.12</junit.version>
-
     <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
     <site-maven-plugin.version>0.12</site-maven-plugin.version>
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
     <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
-
     <!-- plugin properties -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>${java.version}</maven.compiler.source>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
     <!-- release jar to my github maven repo -->
     <github.global.server>github</github.global.server>
   </properties>
-
-  <dependencies>
-
-    <!-- Test -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>${junit.version}</version>
-      <scope>test</scope>
-    </dependency>
-
-  </dependencies>
 
   <distributionManagement>
     <repository>
@@ -111,5 +97,16 @@
 
     </plugins>
   </build>
-
+<!--
+  <repositories>
+    <repository>
+        <id>yren-maven-repo</id>
+        <url>https://raw.githubusercontent.com/yren/maven-repo/master/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+  </repositories>
+-->
 </project>
