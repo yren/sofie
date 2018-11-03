@@ -12,6 +12,11 @@
   <properties>
     <java.version>1.8</java.version>
     <junit.version>4.12</junit.version>
+
+    <!-- plugin properties -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
 
   <dependencies>
