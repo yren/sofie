@@ -11,18 +11,13 @@
   <artifactId>sofie-client</artifactId>
   <packaging>jar</packaging>
   <version>0.1.0</version>
-  <name>sofie-client</name>
+  <name>sofie client</name>
   <description>sofie framework client</description>
 
   <properties>
     <java.version>1.8</java.version>
     <junit.version>4.12</junit.version>
-
-    <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
-    <site-maven-plugin.version>0.12</site-maven-plugin.version>
-    <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
-    <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
-
+    <!-- plugin properties -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
