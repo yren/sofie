@@ -10,7 +10,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 
-public class ProtocolEncapsulatorBase {
+public abstract class ProtocolEncapsulateBase {
 
     public static char validateAndExtractSeparator(String body, String idTag, boolean isRequest)
         throws SofieBaseException {
