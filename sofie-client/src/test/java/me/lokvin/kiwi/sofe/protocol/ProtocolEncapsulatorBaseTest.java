@@ -3,19 +3,23 @@ package me.lokvin.kiwi.sofe.protocol;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 public class ProtocolEncapsulatorBaseTest {
 
     @Test
     public void testUrlEncodeParameters() {
-        Assert.fail("to be implement");
+        String[] params = {"mike abc", "tom", "jerry"};
+        String[] results = ProtocolEncapsulatorBase.urlEncodeParameters(params);
+        String[] expect = {"mike+abc", "tom", "jerry"};
+        Assert.assertArrayEquals("should be equal", expect, results);
     }
 
-    @Test
     public void testUrlDecodeParameters() {
         Assert.fail("to be implement");
     }
 
-    @Test
+
     public void testValidateAndExtractSeparator() {
         Assert.fail("to be implement");
     }
