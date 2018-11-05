@@ -3,7 +3,6 @@ package me.lokvin.kiwi.sofe.client;
 import me.lokvin.kiwi.sofe.exception.SofieApiException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public abstract class BaseSofieClient {
 
@@ -47,7 +46,7 @@ public abstract class BaseSofieClient {
         if (!isInitialized) {
             throw new SofieApiException("Client not initialized.");
         }
-        throw new NotImplementedException();
+        throw new RuntimeException();
     }
 
 }
