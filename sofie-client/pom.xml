@@ -7,7 +7,6 @@
     <artifactId>sofie</artifactId>
     <version>0.1.0</version>
   </parent>
-  <groupId>me.lokvin.kiwi.sofe</groupId>
   <artifactId>sofie-client</artifactId>
   <packaging>jar</packaging>
   <version>0.1.0</version>
@@ -20,6 +19,7 @@
     <logback.version>1.2.3</logback.version>
     <commons-pool2.version>2.6.0</commons-pool2.version>
     <httpclient.version>4.5.6</httpclient.version>
+    <commons-lang.version>3.8.1</commons-lang.version>
     <!-- plugin properties -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -43,6 +43,12 @@
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
       <version>${httpclient.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang.version}</version>
     </dependency>
 
     <!-- Test -->

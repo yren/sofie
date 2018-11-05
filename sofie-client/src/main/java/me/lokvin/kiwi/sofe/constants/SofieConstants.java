@@ -4,7 +4,7 @@ public interface SofieConstants {
 
     char PROTOCOL_SEPARATOR = ' ';
     String CURRENT_VERSION = "1.0";
-    String ENCODING = "UTF-8";
+    String ENCODING_UTF8 = "UTF-8";
 
     interface CriticalDefaults {
         // 5 seconds timeout
