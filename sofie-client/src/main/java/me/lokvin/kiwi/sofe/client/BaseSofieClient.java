@@ -16,9 +16,12 @@ public abstract class BaseSofieClient {
 
 
     protected abstract String performSofieRequest(String commandWithArgs, Logger commandLogger) throws SofieApiException;
+
     protected abstract void internalClose();
 
-    public BaseSofieClient(String version, char protocolSeparator, boolean urlEncodeArgsEnabled, boolean urlDecodeResultsEnabled, Logger commandLogger) {
+    public BaseSofieClient(String version, char protocolSeparator,
+                           boolean urlEncodeArgsEnabled, boolean urlDecodeResultsEnabled,
+                           Logger commandLogger) {
         this.version = version;
         this.protocolSeparator = protocolSeparator;
         this.urlEncodeArgsEnabled = urlEncodeArgsEnabled;
