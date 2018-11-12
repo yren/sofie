@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class RequestEncapsulate extends ProtocolEncapsulateBase {
 
-    public static final String REQUEST_KEYWORD = "SOFIE_REQUEST";
+    public static final String REQUEST_KEYWORD = "SOFIEREQ";
 
     private String requestCommand;
     private String requestVersion;
