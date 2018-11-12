@@ -19,7 +19,7 @@ public class RequestEncapsulate extends ProtocolEncapsulateBase {
     }
 
     public static RequestEncapsulate parse(String requestBody) throws SofieBaseException {
-        char protocolSeparator = validateAndExtractSeparator(requestBody, REQUEST_KEYWORD, true);
+        char protocolSeparator = extractSeparator(requestBody, REQUEST_KEYWORD, true);
         String[] parts = StringUtils.split(requestBody, protocolSeparator);
         if (parts == null || parts.length < 3) {
             throw new InvalidRequestException("request not properly format.");

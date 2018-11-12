@@ -28,7 +28,7 @@ public class ProtocolEncapsulateBaseTest {
         String body = "id message";
         String idTag = "id";
         try {
-            char separator = ProtocolEncapsulateBase.validateAndExtractSeparator(body, idTag, true);
+            char separator = ProtocolEncapsulateBase.extractSeparator(body, idTag, true);
             Assert.assertEquals("should be equal empty char", ' ', separator);
         } catch (SofieBaseException e) {
             e.printStackTrace();

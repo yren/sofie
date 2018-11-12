@@ -12,7 +12,7 @@ import java.net.URLEncoder;
 
 public abstract class ProtocolEncapsulateBase {
 
-    public static char validateAndExtractSeparator(String body, String idTag, boolean isRequest)
+    public static char extractSeparator(String body, String idTag, boolean isRequest)
         throws SofieBaseException {
         String exceptionMsg = null;
         boolean tooSmall = false;
