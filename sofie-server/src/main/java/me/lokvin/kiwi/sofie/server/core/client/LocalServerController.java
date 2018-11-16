@@ -17,6 +17,11 @@ public class LocalServerController {
     private static final Option CMD_START = new Option("start", false, "Start Sofie server");
     private static final Option CMD_HELP = new Option("help", false, "Get help");
 
+    private static final Options OPTS_COMMAND = new Options();
+    private static final Option PARAM_SERVER_ID = new Option("serverId", true, "The server id for this server");
+    private static final Option FLAG_VERBOSE = new Option("verbose", false, "Flag for show verbose log");
+
+
     static {
         // top level args
         COMMANDS.addOption(CMD_START);
@@ -26,6 +31,15 @@ public class LocalServerController {
         CMD_HELP.setRequired(false);
         OPTS_CONTROLLER.addOption(CMD_HELP);
 
+        // second level args
+        PARAM_SERVER_ID.setRequired(true);
+        PARAM_SERVER_ID.setArgs(1);
+        PARAM_SERVER_ID.setArgName("id");
+        PARAM_SERVER_ID.setOptionalArg(false);
+        OPTS_COMMAND.addOption(PARAM_SERVER_ID);
+
+        FLAG_VERBOSE.setRequired(false);
+        OPTS_COMMAND.addOption(FLAG_VERBOSE);
     }
 
     public static void main(String[] args) {
@@ -38,6 +52,11 @@ public class LocalServerController {
             CommandLine controllerOpts = parser.parse(OPTS_CONTROLLER, args, true);
             boolean helpFlag = controllerOpts.hasOption(CMD_HELP.getOpt());
             logger.info("flag = {}", helpFlag);
+            CommandLine commandOpts = null;
+
+            if (!helpFlag) {
+
+            }
         } catch (Throwable t) {
             logger.warn("error", t);
         }
