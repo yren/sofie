@@ -37,7 +37,7 @@ public class LocalServerController {
             CommandLineParser parser = new DefaultParser();
             CommandLine controllerOpts = parser.parse(OPTS_CONTROLLER, args, true);
             boolean helpFlag = controllerOpts.hasOption(CMD_HELP.getOpt());
-            System.out.println("flag: " + helpFlag);
+            logger.info("flag = {}", helpFlag);
         } catch (Throwable t) {
             logger.warn("error", t);
         }
