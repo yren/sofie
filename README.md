@@ -13,3 +13,9 @@ sofie framework
 [![Build Status](https://travis-ci.org/yren/sofie.svg?branch=master)](https://travis-ci.org/yren/sofie)
 
 </div>
+
+# project init
+* sofie-server module
+```
+mvn archetype:generate -DgroupId=me.lokvin.kiwi.sofie.server -DartifactId=sofie-server -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
