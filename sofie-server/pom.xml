@@ -9,9 +9,9 @@
   </parent>
   <groupId>me.lokvin.kiwi.sofie.server</groupId>
   <artifactId>sofie-server</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
   <name>sofie-server</name>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/yren/sofie</url>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
