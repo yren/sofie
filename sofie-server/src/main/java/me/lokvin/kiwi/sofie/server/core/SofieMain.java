@@ -34,5 +34,9 @@ public class SofieMain {
         }
     }
 
+    public void initializeStaticSettings() throws StartupException {
+
+    }
+
 
 }
