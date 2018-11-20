@@ -55,7 +55,7 @@ public class LocalServerController {
             CommandLine commandOpts = null;
 
             if (!helpFlag) {
-
+                commandOpts = parser.parse(OPTS_COMMAND, controllerOpts.getArgs(), true);
             }
         } catch (Throwable t) {
             logger.warn("error", t);
