@@ -12,8 +12,8 @@ public class StartupContextImpl implements StartupContext {
     private ApplicationSettingsIdentity identity;
 
     public StartupContextImpl(String appName) {
-        staticConfName = appName + "-static";
-        dynamicConfName = appName + "-dynamic";
+        staticConfName = appName + "-static.properties";
+        dynamicConfName = appName + "-dynamic.properties";
         identity = new ApplicationSettingsIdentity(appName);
         logger.info("static config file: {}, dynamic config file: {}", staticConfName, dynamicConfName);
     }
