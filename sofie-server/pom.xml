@@ -10,7 +10,8 @@
   <groupId>me.lokvin.kiwi.sofie.server</groupId>
   <artifactId>sofie-server</artifactId>
   <version>0.1.0</version>
-  <name>sofie-server</name>
+  <name>sofie server</name>
+  <description>sofie framework server</description>
   <url>https://github.com/yren/sofie</url>
   <properties>
     <junit.version>4.12</junit.version>
