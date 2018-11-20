@@ -1,6 +1,8 @@
 package me.lokvin.kiwi.sofie.server.exception;
 
-public class StartupException extends Exception {
+import me.lokvin.kiwi.sofe.exception.SofieBaseException;
+
+public class StartupException extends SofieBaseException {
 
     private int errorCode;
 
