@@ -98,7 +98,7 @@
 
     </plugins>
   </build>
-<!--
+
   <repositories>
     <repository>
         <id>yren-maven-repo</id>
@@ -109,5 +109,5 @@
         </snapshots>
     </repository>
   </repositories>
--->
+
 </project>
