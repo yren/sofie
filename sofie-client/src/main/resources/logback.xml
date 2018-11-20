@@ -14,7 +14,7 @@
     <file>/rt/logs/sofie/sofie.log</file>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <!-- daily rollover -->
-      <fileNamePattern>jetty_%d{yyyy-MM-dd}.log</fileNamePattern>
+      <fileNamePattern>sofie_%d{yyyy-MM-dd}.log</fileNamePattern>
       <maxHistory>5</maxHistory>
     </rollingPolicy>
 

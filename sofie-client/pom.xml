@@ -23,6 +23,7 @@
     <httpclient.version>4.5.6</httpclient.version>
     <commons-lang.version>3.8.1</commons-lang.version>
     <commons-configuration.version>2.4</commons-configuration.version>
+    <commons-beanutils.version>1.9.3</commons-beanutils.version>
     <mockito-core.version>2.23.0</mockito-core.version>
     <!-- plugin properties -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -59,6 +60,12 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-configuration2</artifactId>
       <version>${commons-configuration.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>${commons-beanutils.version}</version>
     </dependency>
 
     <!-- Test -->

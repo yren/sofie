@@ -25,4 +25,8 @@ public class StartupContextImpl implements StartupContext {
     public String getDynamicConfName() {
         return dynamicConfName;
     }
+
+    public ApplicationSettingsIdentity getIdentity() {
+        return identity;
+    }
 }

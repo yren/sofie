@@ -38,6 +38,7 @@ public class SofieMain {
     }
 
     public void initializeStaticSettings() throws StartupException {
+        KiwiSettings.setIdentity(startupCtx.getIdentity());
         staticSettings = KiwiSettings.createApplicationSettings(startupCtx.getStaticConfName(), SofieStaticSettings.class);
     }
 
