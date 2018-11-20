@@ -1,5 +1,7 @@
 package me.lokvin.kiwi.sofie.server.core;
 
+import me.lokvin.kiwi.sofe.annotations.KiwiSettings;
+import me.lokvin.kiwi.sofie.server.core.configuration.SofieStaticSettings;
 import me.lokvin.kiwi.sofie.server.core.context.StartupContextImpl;
 import me.lokvin.kiwi.sofie.server.exception.StartupException;
 import org.apache.commons.lang3.ArrayUtils;
@@ -18,6 +20,7 @@ public class SofieMain {
     private Logger logger = LoggerFactory.getLogger(SofieMain.class);
 
     private StartupContextImpl startupCtx = null;
+    private SofieStaticSettings staticSettings = null;
 
     public void initializeStartupContext(String[] args) throws StartupException {
         if (ArrayUtils.getLength(args) < 1) {
@@ -35,7 +38,7 @@ public class SofieMain {
     }
 
     public void initializeStaticSettings() throws StartupException {
-
+        staticSettings = KiwiSettings.createApplicationSettings(startupCtx.getStaticConfName(), SofieStaticSettings.class);
     }
 
 

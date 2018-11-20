@@ -9,6 +9,14 @@ public class ApplicationSettingsIdentity {
     private static File baseRtDir = null;
     private static final String ENVIRONMENT = "ENVIRONMENT";
     private static String environment = null;
+    private static String appName = null;
     private final ReentrantLock configurationLock = new ReentrantLock();
 
+    public ApplicationSettingsIdentity(String appName) {
+        this.appName = appName;
+    }
+
+    public ReentrantLock getConfigurationLock() {
+        return configurationLock;
+    }
 }
