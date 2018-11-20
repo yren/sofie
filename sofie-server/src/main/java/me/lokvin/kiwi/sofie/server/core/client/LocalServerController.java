@@ -56,6 +56,7 @@ public class LocalServerController {
 
             if (!helpFlag) {
                 commandOpts = parser.parse(OPTS_COMMAND, controllerOpts.getArgs(), true);
+                main.initializeStartupContext(new String[]{commandOpts.getOptionValue(PARAM_SERVER_ID.getOpt())});
             }
         } catch (Throwable t) {
             logger.warn("error", t);
